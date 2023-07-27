@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjectGrafika3D: Dokumentacja pliku labirynth.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjectGrafika3D
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku labirynth.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Przechowuje deklarację plików nagłówkowych, funkcji i stałych używanych do obsługi labiryntu.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;GL/glut.h&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div>
+<p><a href="labirynth_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a241aeeb764887ae5e3de58b98f04b16d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a241aeeb764887ae5e3de58b98f04b16d">WIDTH</a>&#160;&#160;&#160;960</td></tr>
+<tr class="separator:a241aeeb764887ae5e3de58b98f04b16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed89bd71aee8be823e8a20ec4e093c1e"><td class="memItemLeft" align="right" valign="top"><a id="aed89bd71aee8be823e8a20ec4e093c1e" name="aed89bd71aee8be823e8a20ec4e093c1e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEIGHT</b>&#160;&#160;&#160;540</td></tr>
+<tr class="separator:aed89bd71aee8be823e8a20ec4e093c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a> ()</td></tr>
+<tr class="memdesc:a1e3b6d38df0786ccf7f938d60e386aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizacja parametrów.  <br /></td></tr>
+<tr class="separator:a1e3b6d38df0786ccf7f938d60e386aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3fb9b91b5c167b70a1a0557e67f271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a5d3fb9b91b5c167b70a1a0557e67f271">Display</a> ()</td></tr>
+<tr class="memdesc:a5d3fb9b91b5c167b70a1a0557e67f271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyświetlanie grafiki.  <br /></td></tr>
+<tr class="separator:a5d3fb9b91b5c167b70a1a0557e67f271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c1a4540b4314a7ae53471b0936978b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#ae4c1a4540b4314a7ae53471b0936978b">Reload_TextView</a> ()</td></tr>
+<tr class="memdesc:ae4c1a4540b4314a7ae53471b0936978b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resetowanie widoku kamery i projekcji na scenie.  <br /></td></tr>
+<tr class="separator:ae4c1a4540b4314a7ae53471b0936978b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef65ec9dceefbeb9b9816decd0b13f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a8ef65ec9dceefbeb9b9816decd0b13f0">Keyboard</a> (GLubyte, int, int)</td></tr>
+<tr class="memdesc:a8ef65ec9dceefbeb9b9816decd0b13f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsługa wciśniętych klawiszy.  <br /></td></tr>
+<tr class="separator:a8ef65ec9dceefbeb9b9816decd0b13f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d58dd19146891f3c43ea79a031d2af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#ac9d58dd19146891f3c43ea79a031d2af">processSpecialKeys</a> (int, int, int)</td></tr>
+<tr class="memdesc:ac9d58dd19146891f3c43ea79a031d2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsługa specjalnych klawiszy.  <br /></td></tr>
+<tr class="separator:ac9d58dd19146891f3c43ea79a031d2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a> ()</td></tr>
+<tr class="memdesc:ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uruchomienie gry.  <br /></td></tr>
+<tr class="separator:ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b444b00ce1997b232d92175077b7ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#aa6b444b00ce1997b232d92175077b7ac">drawCube</a> ()</td></tr>
+<tr class="memdesc:aa6b444b00ce1997b232d92175077b7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysowanie sześcianu.  <br /></td></tr>
+<tr class="separator:aa6b444b00ce1997b232d92175077b7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd79e5436e9cf83558c6f197ce15146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a4fd79e5436e9cf83558c6f197ce15146">drawGround</a> (GLuint &amp;)</td></tr>
+<tr class="memdesc:a4fd79e5436e9cf83558c6f197ce15146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysowanie podłoża.  <br /></td></tr>
+<tr class="separator:a4fd79e5436e9cf83558c6f197ce15146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebf45ae6fbb81b868d43ecf16043461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#aeebf45ae6fbb81b868d43ecf16043461">drawCircle</a> (float, int)</td></tr>
+<tr class="memdesc:aeebf45ae6fbb81b868d43ecf16043461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysowanie okręgu.  <br /></td></tr>
+<tr class="separator:aeebf45ae6fbb81b868d43ecf16043461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d946e3d432513136be5af02d191a9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a53d946e3d432513136be5af02d191a9d">loadTexture</a> (const string &amp;, GLuint &amp;)</td></tr>
+<tr class="memdesc:a53d946e3d432513136be5af02d191a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytywanie tekstur.  <br /></td></tr>
+<tr class="separator:a53d946e3d432513136be5af02d191a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ebef228b6633754a3122edd12a5473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a60ebef228b6633754a3122edd12a5473">timer</a> (int)</td></tr>
+<tr class="memdesc:a60ebef228b6633754a3122edd12a5473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odliczanie czasu.  <br /></td></tr>
+<tr class="separator:a60ebef228b6633754a3122edd12a5473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ee04dc98901b8c4db242c1beb7d840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a13ee04dc98901b8c4db242c1beb7d840">showNotification</a> (float, float, string, void *)</td></tr>
+<tr class="memdesc:a13ee04dc98901b8c4db242c1beb7d840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokaż informacje.  <br /></td></tr>
+<tr class="separator:a13ee04dc98901b8c4db242c1beb7d840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bc46ea2d88723304d2468639ee60f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labirynth_8h.html#a46bc46ea2d88723304d2468639ee60f4">information</a> ()</td></tr>
+<tr class="memdesc:a46bc46ea2d88723304d2468639ee60f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informacje do wyświetlenia.  <br /></td></tr>
+<tr class="separator:a46bc46ea2d88723304d2468639ee60f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Przechowuje deklarację plików nagłówkowych, funkcji i stałych używanych do obsługi labiryntu. </p>
+<dl class="section author"><dt>Autor</dt><dd>Michał Polak </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>May 2023 </dd></dl>
+</div><h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="a241aeeb764887ae5e3de58b98f04b16d" name="a241aeeb764887ae5e3de58b98f04b16d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241aeeb764887ae5e3de58b98f04b16d">&#9670;&#160;</a></span>WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIDTH&#160;&#160;&#160;960</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zdefiniowanie wielkości okna. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a5d3fb9b91b5c167b70a1a0557e67f271" name="a5d3fb9b91b5c167b70a1a0557e67f271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3fb9b91b5c167b70a1a0557e67f271">&#9670;&#160;</a></span>Display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wyświetlanie grafiki. </p>
+
+</div>
+</div>
+<a id="aeebf45ae6fbb81b868d43ecf16043461" name="aeebf45ae6fbb81b868d43ecf16043461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeebf45ae6fbb81b868d43ecf16043461">&#9670;&#160;</a></span>drawCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawCircle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>segments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rysowanie okręgu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radius</td><td>- Promień okręgu. </td></tr>
+    <tr><td class="paramname">segments</td><td>- Ilość segmentów, na które podzielone jest koło. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6b444b00ce1997b232d92175077b7ac" name="aa6b444b00ce1997b232d92175077b7ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b444b00ce1997b232d92175077b7ac">&#9670;&#160;</a></span>drawCube()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawCube </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rysowanie sześcianu. </p>
+
+</div>
+</div>
+<a id="a4fd79e5436e9cf83558c6f197ce15146" name="a4fd79e5436e9cf83558c6f197ce15146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd79e5436e9cf83558c6f197ce15146">&#9670;&#160;</a></span>drawGround()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawGround </td>
+          <td>(</td>
+          <td class="paramtype">GLuint &amp;&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rysowanie podłoża. </p>
+
+</div>
+</div>
+<a id="a46bc46ea2d88723304d2468639ee60f4" name="a46bc46ea2d88723304d2468639ee60f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bc46ea2d88723304d2468639ee60f4">&#9670;&#160;</a></span>information()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void information </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informacje do wyświetlenia. </p>
+
+</div>
+</div>
+<a id="a1e3b6d38df0786ccf7f938d60e386aae" name="a1e3b6d38df0786ccf7f938d60e386aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3b6d38df0786ccf7f938d60e386aae">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicjalizacja parametrów. </p>
+
+</div>
+</div>
+<a id="a8ef65ec9dceefbeb9b9816decd0b13f0" name="a8ef65ec9dceefbeb9b9816decd0b13f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef65ec9dceefbeb9b9816decd0b13f0">&#9670;&#160;</a></span>Keyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Keyboard </td>
+          <td>(</td>
+          <td class="paramtype">GLubyte&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obsługa wciśniętych klawiszy. </p>
+<p>Lista zdarzeń:</p><ul>
+<li>Zdarzenia klawiatury:<ol type="1">
+<li>Klawisz 'm' <br  />
+ Wyświetlenie mapy z góry.</li>
+<li>Klawisz 'x' <br  />
+ Zakończenie działania programu.</li>
+<li>Klawisz '1' <br  />
+ Przełączenie na mapę 1.</li>
+<li>Klawisz '2' <br  />
+ Przełączenie na mapę 2.</li>
+<li>Klawisz '3' <br  />
+ Przełączenie na mapę 3.</li>
+<li>Klawisz '4' <br  />
+ Przełączenie na mapę 4.</li>
+</ol>
+</li>
+</ul>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>- kod wciśniętego klawisza. </td></tr>
+    <tr><td class="paramname">xx</td><td>- pozycja kursora myszy w osi X. </td></tr>
+    <tr><td class="paramname">yy</td><td>- pozycja kursora myszy w osi Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53d946e3d432513136be5af02d191a9d" name="a53d946e3d432513136be5af02d191a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d946e3d432513136be5af02d191a9d">&#9670;&#160;</a></span>loadTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadTexture </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GLuint &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytywanie tekstur. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>- nazwa pliku z teksturą. </td></tr>
+    <tr><td class="paramname">texture</td><td>- identyfikator tekstury. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac9d58dd19146891f3c43ea79a031d2af" name="ac9d58dd19146891f3c43ea79a031d2af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d58dd19146891f3c43ea79a031d2af">&#9670;&#160;</a></span>processSpecialKeys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void processSpecialKeys </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obsługa specjalnych klawiszy. </p>
+<p>Lista zdarzeń:</p><ul>
+<li>Zdarzenia klawiatury:<ol type="1">
+<li>Strzałka w lewo <br  />
+ Obrót kamery w lewą stronę.</li>
+<li>Strzałka w prawo <br  />
+ Obrót kamery w prawą stronę.</li>
+<li>Strzałka w dół <br  />
+ Przesunięcie kamery do tyłu.</li>
+<li>Strzałka w górę <br  />
+ Przesunięcie kamery w przód.</li>
+</ol>
+</li>
+</ul>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>- kod wciśniętego klawisza specjalnego. </td></tr>
+    <tr><td class="paramname">xx</td><td>- pozycja kursora myszy w osi X. </td></tr>
+    <tr><td class="paramname">yy</td><td>- pozycja kursora myszy w osi Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4c1a4540b4314a7ae53471b0936978b" name="ae4c1a4540b4314a7ae53471b0936978b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c1a4540b4314a7ae53471b0936978b">&#9670;&#160;</a></span>Reload_TextView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reload_TextView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resetowanie widoku kamery i projekcji na scenie. </p>
+
+</div>
+</div>
+<a id="a13ee04dc98901b8c4db242c1beb7d840" name="a13ee04dc98901b8c4db242c1beb7d840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ee04dc98901b8c4db242c1beb7d840">&#9670;&#160;</a></span>showNotification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showNotification </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>font</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pokaż informacje. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>- Współrzędna x. </td></tr>
+    <tr><td class="paramname">y</td><td>- Współrzędna y. </td></tr>
+    <tr><td class="paramname">text</td><td>- Tekst. </td></tr>
+    <tr><td class="paramname">font</td><td>- Nazwa czcionki. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1f321a2f17fa8ba0f5ab4e2621fd6d6" name="ab1f321a2f17fa8ba0f5ab4e2621fd6d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">&#9670;&#160;</a></span>startGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void startGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uruchomienie gry. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>- Poziom w grze. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a60ebef228b6633754a3122edd12a5473" name="a60ebef228b6633754a3122edd12a5473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ebef228b6633754a3122edd12a5473">&#9670;&#160;</a></span>timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void timer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odliczanie czasu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- Informacja o stanie timera. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

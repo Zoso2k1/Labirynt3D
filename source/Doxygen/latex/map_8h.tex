@@ -1,0 +1,95 @@
+\doxysection{Dokumentacja pliku map.\+h}
+\hypertarget{map_8h}{}\label{map_8h}\index{map.h@{map.h}}
+
+
+Przechowuje deklarację plików nagłówkowych i funkcji służącej do odczytywanie tablicy dwuwymiarowej z pliku txt.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{map_8h_a30ef02b641f5ebb6c7a42c22d3f17e17}{read\+Map\+From\+File}} (const string \&, int, int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Odczytywanie danych z pliku txt i dodawanie ich do tablicy dwuwymiarowej. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{map_8h_a43ff4b31f805ed2976746440d2a72ab6}{read\+Results\+From\+File}} (const string \&, int, int \texorpdfstring{$\ast$}{*})
+\item 
+bool \mbox{\hyperlink{map_8h_af6a60a7dd29ec5ea35eae51915c5bae4}{write\+Results\+To\+File}} (const string \&, int, const int \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Przechowuje deklarację plików nagłówkowych i funkcji służącej do odczytywanie tablicy dwuwymiarowej z pliku txt. 
+
+\begin{DoxyAuthor}{Autor}
+Michał Polak 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+May 2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{map_8h_a30ef02b641f5ebb6c7a42c22d3f17e17}\label{map_8h_a30ef02b641f5ebb6c7a42c22d3f17e17} 
+\index{map.h@{map.h}!readMapFromFile@{readMapFromFile}}
+\index{readMapFromFile@{readMapFromFile}!map.h@{map.h}}
+\doxysubsubsection{\texorpdfstring{readMapFromFile()}{readMapFromFile()}}
+{\footnotesize\ttfamily bool read\+Map\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name,  }\item[{int}]{size,  }\item[{int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{Map }\end{DoxyParamCaption})}
+
+
+
+Odczytywanie danych z pliku txt i dodawanie ich do tablicy dwuwymiarowej. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em file\+Name} & -\/ Nazwa pliku. \\
+\hline
+{\em size} & -\/ Rozmiar tablicy. \\
+\hline
+{\em Map} & -\/ Wskaźnik do tablicy dwuwymiarowej. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ Wartość logiczna informująca o powodzeniu operacji odczytu danych z pliku. 
+\end{DoxyReturn}
+\Hypertarget{map_8h_a43ff4b31f805ed2976746440d2a72ab6}\label{map_8h_a43ff4b31f805ed2976746440d2a72ab6} 
+\index{map.h@{map.h}!readResultsFromFile@{readResultsFromFile}}
+\index{readResultsFromFile@{readResultsFromFile}!map.h@{map.h}}
+\doxysubsubsection{\texorpdfstring{readResultsFromFile()}{readResultsFromFile()}}
+{\footnotesize\ttfamily bool read\+Results\+From\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name,  }\item[{int}]{size,  }\item[{int \texorpdfstring{$\ast$}{*}}]{Results }\end{DoxyParamCaption})}
+
+Odczytanie danych z pliku txt i dodanie ich do tablicy.
+
+
+\begin{DoxyParams}{Parametry}
+{\em file\+Name} & -\/ Nazwa pliku. \\
+\hline
+{\em size} & -\/ Rozmiar tablicy. \\
+\hline
+{\em Results} & -\/ Wskaźnik do tablicy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ Wartość logiczna informująca o powodzeniu operacji odczytu danych z pliku. 
+\end{DoxyReturn}
+\Hypertarget{map_8h_af6a60a7dd29ec5ea35eae51915c5bae4}\label{map_8h_af6a60a7dd29ec5ea35eae51915c5bae4} 
+\index{map.h@{map.h}!writeResultsToFile@{writeResultsToFile}}
+\index{writeResultsToFile@{writeResultsToFile}!map.h@{map.h}}
+\doxysubsubsection{\texorpdfstring{writeResultsToFile()}{writeResultsToFile()}}
+{\footnotesize\ttfamily bool write\+Results\+To\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name,  }\item[{int}]{size,  }\item[{const int \texorpdfstring{$\ast$}{*}}]{Results }\end{DoxyParamCaption})}
+
+Zapisanie danych z tablicy do pliku txt.
+
+
+\begin{DoxyParams}{Parametry}
+{\em file\+Name} & -\/ Nazwa pliku. \\
+\hline
+{\em size} & -\/ Rozmiar tablicy. \\
+\hline
+{\em Results} & -\/ Wskaźnik do tablicy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ Wartość logiczna informująca o powodzeniu operacji zapisu danych pliku. 
+\end{DoxyReturn}

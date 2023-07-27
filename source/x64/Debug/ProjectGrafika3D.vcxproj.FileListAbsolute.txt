@@ -1,0 +1,3 @@
+E:\CUDA\Projects\ProjectGrafika3D\x64\Debug\ProjectGrafika3D.exe
+C:\Users\micha\Desktop\source\x64\Debug\ProjectGrafika3D.exe
+C:\Users\rbarw\Downloads\Desktop\source\x64\Debug\ProjectGrafika3D.exe

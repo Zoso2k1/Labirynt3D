@@ -1,0 +1,21 @@
+Instrukcja kompilacji:
+
+Grę można skompilować za pomocą środowiska Visual Studio 2022, klikając przycisk podpisany jako “Lokalny debuger Windows” lub przycisk obok, podpisany jako “Uruchom bez debugowania” w górnym menu, oznaczony dodatkowo zieloną strzałką. 
+
+Do poprawnego działania projektu wymagane jest dodane do projektu bibliotek Glut oraz STB. Aby to zrobić należy w oknie “Eksplorator rozwiązań” kliknąć na nazwę projektu prawym przyciskiem myszy oraz wybrać z menu kontekstowego  “Właściwości Projektu”. Następnie należy wybrać po lewej stronie zakładkę “C/C++”, a w niej podzakładkę “Ogólne” i w sekcji “Dodatkowe katalogi plików nagłówkowych” należy dodać ścieżki do plików:
+- Libraries\freeglut\include
+- Libraries\STB
+
+
+
+Kolejnym krokiem jest przejście do zakładki “Konsolidator”, a później wybranie podzakładki “Ogólne”. Następnie w sekcji “Dodatkowe katalogi bibliotek” należy dodać ścieżki plików .lib biblioteki Glut :
+- Libraries\freeglut\lib\x64
+
+
+
+Ostatnim krokiem jest przejście w zakładce “Konsolidator” do podzakładki  “Dane wejściowe” i w sekcji “Dodatkowe zależności” zadeklarowanie nazw bibliotek:
+- “freeglut.lib”
+
+
+
+Po przedstawionym powyżej procesie zlokalizowania plików we właściwościach projektu, gra powinna uruchomić się poprawnie.

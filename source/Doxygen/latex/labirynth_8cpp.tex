@@ -1,0 +1,418 @@
+\doxysection{Dokumentacja pliku labirynth.\+cpp}
+\hypertarget{labirynth_8cpp}{}\label{labirynth_8cpp}\index{labirynth.cpp@{labirynth.cpp}}
+
+
+Przechowuje funkcje oraz zmienne używane do rysowania labiryntu.  
+
+
+{\ttfamily \#include \"{}labirynth.\+h\"{}}\newline
+{\ttfamily \#include \"{}map.\+h\"{}}\newline
+{\ttfamily \#include $<$stb\+\_\+image.\+h$>$}\newline
+\doxysubsubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{labirynth_8cpp_a18372412ad2fc3ce1e3240b3cf0efe78}\label{labirynth_8cpp_a18372412ad2fc3ce1e3240b3cf0efe78} 
+\#define {\bfseries STB\+\_\+\+IMAGE\+\_\+\+IMPLEMENTATION}
+\item 
+\Hypertarget{labirynth_8cpp_a598a3330b3c21701223ee0ca14316eca}\label{labirynth_8cpp_a598a3330b3c21701223ee0ca14316eca} 
+\#define {\bfseries PI}~3.\+14159265359f
+\begin{DoxyCompactList}\small\item\em Ustawienie stałej PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{labirynth_8cpp_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Uruchomienie gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a1e3b6d38df0786ccf7f938d60e386aae}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizacja parametrów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_ae4c1a4540b4314a7ae53471b0936978b}{Reload\+\_\+\+Text\+View}} ()
+\begin{DoxyCompactList}\small\item\em Resetowanie widoku kamery i projekcji na scenie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_acdfe1a696b350494a8500d2dde392242}{Reload\+\_\+\+Table\+View}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizowanie widoku kamery i projekcji na scenie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a5d3fb9b91b5c167b70a1a0557e67f271}{Display}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetlanie grafiki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a5a2513e1f41919b94fbb1cf15b615527}{timer}} (int value)
+\begin{DoxyCompactList}\small\item\em Odliczanie czasu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{labirynth_8cpp_ac82118c866604d122c9b45bd843aea86}{is\+Wall}} (float valX, float valZ)
+\begin{DoxyCompactList}\small\item\em Sprawdzanie czy kamera nie wchodzi w ścianę. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a22a15e4bdf7b2b913b6cb41cc85b0b79}{process\+Special\+Keys}} (int key, int xx, int yy)
+\begin{DoxyCompactList}\small\item\em Obsługa specjalnych klawiszy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a16ec404ff0097a16db4aebeb531c96f9}{Keyboard}} (GLubyte key, int xx, int yy)
+\begin{DoxyCompactList}\small\item\em Obsługa wciśniętych klawiszy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_aa6b444b00ce1997b232d92175077b7ac}{draw\+Cube}} ()
+\begin{DoxyCompactList}\small\item\em Rysowanie sześcianu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_aa7011471c4d89f2dd0846c097ece594b}{draw\+Ground}} (GLuint \&texture)
+\begin{DoxyCompactList}\small\item\em Rysowanie podłoża. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a4be7af652351c615ff1d8f4aff3caf3c}{draw\+Circle}} (float radius, int segments)
+\begin{DoxyCompactList}\small\item\em Rysowanie okręgu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a59d9e63f97e72e9e45f53cc6903d23c1}{load\+Texture}} (const string \&file\+Name, GLuint \&texture)
+\begin{DoxyCompactList}\small\item\em Wczytywanie tekstur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a46bc46ea2d88723304d2468639ee60f4}{information}} ()
+\begin{DoxyCompactList}\small\item\em Informacje do wyświetlenia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{labirynth_8cpp_a24bfbdc56b5ad131c24501a347941915}{show\+Notification}} (float \mbox{\hyperlink{labirynth_8cpp_ad0da36b2558901e21e7a30f6c227a45e}{x}}, float y, string text, void \texorpdfstring{$\ast$}{*}font)
+\begin{DoxyCompactList}\small\item\em Pokaż informacje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{labirynth_8cpp_a571265372bf4134ecccfbded76e79dfa}\label{labirynth_8cpp_a571265372bf4134ecccfbded76e79dfa} 
+GLfloat {\bfseries Light\+\_\+\+Pos} \mbox{[}$\,$\mbox{]} = \{ 0.\+0f, -\/20.\+0f, 80.\+0f, 0.\+0f \}
+\begin{DoxyCompactList}\small\item\em Ustawienie pozycji światła w przestrzeni 3D. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_a03b4f3ff3dba8965f62f102de5b23afb}\label{labirynth_8cpp_a03b4f3ff3dba8965f62f102de5b23afb} 
+GLfloat {\bfseries Light\+\_\+\+Dif} \mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}
+\begin{DoxyCompactList}\small\item\em Ustawienie koloru dyfuzyjnego światła. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_a7b5342089710c514537fb92c5b91a392}\label{labirynth_8cpp_a7b5342089710c514537fb92c5b91a392} 
+GLfloat {\bfseries Ambient} \mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}
+\begin{DoxyCompactList}\small\item\em Określenie koloru światła otoczenia. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_a5375b3871d1a999d551734e9f509b7cc}\label{labirynth_8cpp_a5375b3871d1a999d551734e9f509b7cc} 
+GLfloat {\bfseries Diffuse} \mbox{[}$\,$\mbox{]} = \{ 0.\+6f, 0.\+6f, 0.\+6f, 1.\+0f \}
+\begin{DoxyCompactList}\small\item\em Określenie koloru dyfuzyjnego. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_aca7e47ed6496c7d6f3bec5f319c1a2e2}\label{labirynth_8cpp_aca7e47ed6496c7d6f3bec5f319c1a2e2} 
+GLfloat {\bfseries Specular} \mbox{[}$\,$\mbox{]} = \{ 1.\+0f, 1.\+0f, 1.\+0f, 1.\+0f \}
+\begin{DoxyCompactList}\small\item\em Określenie koloru odbicia lustrzanego dla pow. obiektów użytych do wygenerowania efektów świetlnych na scenie. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_a83dcc0bb40c53df43cb80a2ee34f3087}\label{labirynth_8cpp_a83dcc0bb40c53df43cb80a2ee34f3087} 
+GLuint {\bfseries texture\+Box}
+\begin{DoxyCompactList}\small\item\em Identyfikatory tekstur. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_a9669dd6611df3854dc3f6d44e307c294}\label{labirynth_8cpp_a9669dd6611df3854dc3f6d44e307c294} 
+GLuint {\bfseries texture\+Ground}
+\item 
+\Hypertarget{labirynth_8cpp_ad537c75477a58b4af0f1327d42949147}\label{labirynth_8cpp_ad537c75477a58b4af0f1327d42949147} 
+GLuint {\bfseries texture\+Start}
+\item 
+\Hypertarget{labirynth_8cpp_a9ad9e3c88c4e74fecbd2e4774e308979}\label{labirynth_8cpp_a9ad9e3c88c4e74fecbd2e4774e308979} 
+GLuint {\bfseries texture\+Finish}
+\item 
+\Hypertarget{labirynth_8cpp_aee504d8c21a78702db449ceac8302192}\label{labirynth_8cpp_aee504d8c21a78702db449ceac8302192} 
+int {\bfseries map\+Flag} = 0
+\begin{DoxyCompactList}\small\item\em Zmienna informująca czy klawisz m jest wciśnięty. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_ab8ef1bf8a70cc07c6d55823c390a7e76}\label{labirynth_8cpp_ab8ef1bf8a70cc07c6d55823c390a7e76} 
+float {\bfseries angle} = 3.\+0f
+\begin{DoxyCompactList}\small\item\em Kąt obrotu kamery. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_afb7c4aa8c0b809f0f76628dbb5b6d62b}\label{labirynth_8cpp_afb7c4aa8c0b809f0f76628dbb5b6d62b} 
+float {\bfseries lx} = 0.\+00f
+\begin{DoxyCompactList}\small\item\em Zmienne reprezentujące aktualny kierunek kamery. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_adeebf705e4120efa9a773e0f52b11be0}\label{labirynth_8cpp_adeebf705e4120efa9a773e0f52b11be0} 
+float {\bfseries lz} = 1.\+0f
+\item 
+\Hypertarget{labirynth_8cpp_ad0da36b2558901e21e7a30f6c227a45e}\label{labirynth_8cpp_ad0da36b2558901e21e7a30f6c227a45e} 
+float {\bfseries x} = -\/10.\+0f
+\begin{DoxyCompactList}\small\item\em Zmienne reprezentujące pozycję kamery w 3D. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_aa4f0d3eebc3c443f9be81bf48561a217}\label{labirynth_8cpp_aa4f0d3eebc3c443f9be81bf48561a217} 
+float {\bfseries y} = 1.\+0f
+\item 
+\Hypertarget{labirynth_8cpp_af73583b1e980b0aa03f9884812e9fd4d}\label{labirynth_8cpp_af73583b1e980b0aa03f9884812e9fd4d} 
+float {\bfseries z} = 1.\+0f
+\item 
+\Hypertarget{labirynth_8cpp_a2e6e047734dea2571978d8f1eecaef44}\label{labirynth_8cpp_a2e6e047734dea2571978d8f1eecaef44} 
+float {\bfseries tempX}
+\begin{DoxyCompactList}\small\item\em Zmienne pomocnicze do kamery. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_a04f0d74e6212167933c46812305bc759}\label{labirynth_8cpp_a04f0d74e6212167933c46812305bc759} 
+float {\bfseries tempZ}
+\item 
+\Hypertarget{labirynth_8cpp_a22533f0a0de97c99c02c12469d295899}\label{labirynth_8cpp_a22533f0a0de97c99c02c12469d295899} 
+float {\bfseries tempY}
+\item 
+\Hypertarget{labirynth_8cpp_a43d0f1f4de14c19d4952f66c43e0d59c}\label{labirynth_8cpp_a43d0f1f4de14c19d4952f66c43e0d59c} 
+float {\bfseries temp\+Lx}
+\item 
+\Hypertarget{labirynth_8cpp_a03cb8330f2295d8d5f04fc65abdfac3d}\label{labirynth_8cpp_a03cb8330f2295d8d5f04fc65abdfac3d} 
+float {\bfseries temp\+Lz}
+\item 
+\Hypertarget{labirynth_8cpp_a53829229338c8564e2f09bf74bbd99e5}\label{labirynth_8cpp_a53829229338c8564e2f09bf74bbd99e5} 
+bool {\bfseries block\+Camera} = false
+\item 
+\Hypertarget{labirynth_8cpp_a36ecf0006f5fe9d8bf1f2c1f2f2b4554}\label{labirynth_8cpp_a36ecf0006f5fe9d8bf1f2c1f2f2b4554} 
+int {\bfseries MAX}
+\begin{DoxyCompactList}\small\item\em Zmienne dotyczące mapy. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_ae1d38ec8be47d660949ee4519d5d18c2}\label{labirynth_8cpp_ae1d38ec8be47d660949ee4519d5d18c2} 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries Map}
+\item 
+\Hypertarget{labirynth_8cpp_aa3eca1ce95d246b3f39c933b79641dee}\label{labirynth_8cpp_aa3eca1ce95d246b3f39c933b79641dee} 
+string {\bfseries map\+Name}
+\item 
+\Hypertarget{labirynth_8cpp_a4172c2816db8babc20e42708e74750f6}\label{labirynth_8cpp_a4172c2816db8babc20e42708e74750f6} 
+int {\bfseries Result} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em Zmienne dotyczące odliczania czasu i wyników. \end{DoxyCompactList}\item 
+\Hypertarget{labirynth_8cpp_afc5e2d6926bcf8f3d1c9cd72e3ad7ad5}\label{labirynth_8cpp_afc5e2d6926bcf8f3d1c9cd72e3ad7ad5} 
+int {\bfseries the\+Best\+On\+The\+Map}
+\item 
+\Hypertarget{labirynth_8cpp_a41fc722dd1f26465cf3f2d25b451f4a2}\label{labirynth_8cpp_a41fc722dd1f26465cf3f2d25b451f4a2} 
+int {\bfseries map\+Time} = 0
+\item 
+\Hypertarget{labirynth_8cpp_a00318ea64cb648f7d317aa0cff986955}\label{labirynth_8cpp_a00318ea64cb648f7d317aa0cff986955} 
+int {\bfseries end\+Time}
+\item 
+int \mbox{\hyperlink{labirynth_8cpp_acf4d33ee4cff36f69b924471174dcb11}{level}} = 1
+\begin{DoxyCompactList}\small\item\em Numer mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Przechowuje funkcje oraz zmienne używane do rysowania labiryntu. 
+
+\begin{DoxyAuthor}{Autor}
+Michał Polak 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+April 2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{labirynth_8cpp_a5d3fb9b91b5c167b70a1a0557e67f271}\label{labirynth_8cpp_a5d3fb9b91b5c167b70a1a0557e67f271} 
+\index{labirynth.cpp@{labirynth.cpp}!Display@{Display}}
+\index{Display@{Display}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wyświetlanie grafiki. 
+
+\Hypertarget{labirynth_8cpp_a4be7af652351c615ff1d8f4aff3caf3c}\label{labirynth_8cpp_a4be7af652351c615ff1d8f4aff3caf3c} 
+\index{labirynth.cpp@{labirynth.cpp}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void draw\+Circle (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{int}]{segments }\end{DoxyParamCaption})}
+
+
+
+Rysowanie okręgu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em radius} & -\/ Promień okręgu. \\
+\hline
+{\em segments} & -\/ Ilość segmentów, na które podzielone jest koło. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{labirynth_8cpp_aa6b444b00ce1997b232d92175077b7ac}\label{labirynth_8cpp_aa6b444b00ce1997b232d92175077b7ac} 
+\index{labirynth.cpp@{labirynth.cpp}!drawCube@{drawCube}}
+\index{drawCube@{drawCube}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{drawCube()}{drawCube()}}
+{\footnotesize\ttfamily void draw\+Cube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rysowanie sześcianu. 
+
+\Hypertarget{labirynth_8cpp_aa7011471c4d89f2dd0846c097ece594b}\label{labirynth_8cpp_aa7011471c4d89f2dd0846c097ece594b} 
+\index{labirynth.cpp@{labirynth.cpp}!drawGround@{drawGround}}
+\index{drawGround@{drawGround}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{drawGround()}{drawGround()}}
+{\footnotesize\ttfamily void draw\+Ground (\begin{DoxyParamCaption}\item[{GLuint \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Rysowanie podłoża. 
+
+\Hypertarget{labirynth_8cpp_a46bc46ea2d88723304d2468639ee60f4}\label{labirynth_8cpp_a46bc46ea2d88723304d2468639ee60f4} 
+\index{labirynth.cpp@{labirynth.cpp}!information@{information}}
+\index{information@{information}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{information()}{information()}}
+{\footnotesize\ttfamily void information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Informacje do wyświetlenia. 
+
+\Hypertarget{labirynth_8cpp_a1e3b6d38df0786ccf7f938d60e386aae}\label{labirynth_8cpp_a1e3b6d38df0786ccf7f938d60e386aae} 
+\index{labirynth.cpp@{labirynth.cpp}!Init@{Init}}
+\index{Init@{Init}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicjalizacja parametrów. 
+
+\Hypertarget{labirynth_8cpp_ac82118c866604d122c9b45bd843aea86}\label{labirynth_8cpp_ac82118c866604d122c9b45bd843aea86} 
+\index{labirynth.cpp@{labirynth.cpp}!isWall@{isWall}}
+\index{isWall@{isWall}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{isWall()}{isWall()}}
+{\footnotesize\ttfamily bool is\+Wall (\begin{DoxyParamCaption}\item[{float}]{valX,  }\item[{float}]{valZ }\end{DoxyParamCaption})}
+
+
+
+Sprawdzanie czy kamera nie wchodzi w ścianę. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em valX} & -\/ pozycja kamery w płaszczyźnie x po następnym kroku. \\
+\hline
+{\em valZ} & -\/ pozycja kamery w płaszczyźnie z po następnym kroku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ Zwraca wartość FALSE, jeżeli kamera wchodzi w ścianę lub true, jeżeli nie. 
+\end{DoxyReturn}
+\Hypertarget{labirynth_8cpp_a16ec404ff0097a16db4aebeb531c96f9}\label{labirynth_8cpp_a16ec404ff0097a16db4aebeb531c96f9} 
+\index{labirynth.cpp@{labirynth.cpp}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{Keyboard()}{Keyboard()}}
+{\footnotesize\ttfamily void Keyboard (\begin{DoxyParamCaption}\item[{GLubyte}]{key,  }\item[{int}]{xx,  }\item[{int}]{yy }\end{DoxyParamCaption})}
+
+
+
+Obsługa wciśniętych klawiszy. 
+
+Lista zdarzeń\+:
+\begin{DoxyItemize}
+\item Zdarzenia klawiatury\+:
+\begin{DoxyEnumerate}
+\item Klawisz \textquotesingle{}m\textquotesingle{} ~\newline
+ Wyświetlenie mapy z góry.
+\item Klawisz \textquotesingle{}x\textquotesingle{} ~\newline
+ Zakończenie działania programu.
+\item Klawisz \textquotesingle{}1\textquotesingle{} ~\newline
+ Przełączenie na mapę 1.
+\item Klawisz \textquotesingle{}2\textquotesingle{} ~\newline
+ Przełączenie na mapę 2.
+\item Klawisz \textquotesingle{}3\textquotesingle{} ~\newline
+ Przełączenie na mapę 3.
+\item Klawisz \textquotesingle{}4\textquotesingle{} ~\newline
+ Przełączenie na mapę 4.
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parametry}
+{\em key} & -\/ kod wciśniętego klawisza. \\
+\hline
+{\em xx} & -\/ pozycja kursora myszy w osi X. \\
+\hline
+{\em yy} & -\/ pozycja kursora myszy w osi Y. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{labirynth_8cpp_a59d9e63f97e72e9e45f53cc6903d23c1}\label{labirynth_8cpp_a59d9e63f97e72e9e45f53cc6903d23c1} 
+\index{labirynth.cpp@{labirynth.cpp}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily void load\+Texture (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name,  }\item[{GLuint \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Wczytywanie tekstur. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em file\+Name} & -\/ nazwa pliku z teksturą. \\
+\hline
+{\em texture} & -\/ identyfikator tekstury. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{labirynth_8cpp_a22a15e4bdf7b2b913b6cb41cc85b0b79}\label{labirynth_8cpp_a22a15e4bdf7b2b913b6cb41cc85b0b79} 
+\index{labirynth.cpp@{labirynth.cpp}!processSpecialKeys@{processSpecialKeys}}
+\index{processSpecialKeys@{processSpecialKeys}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{processSpecialKeys()}{processSpecialKeys()}}
+{\footnotesize\ttfamily void process\+Special\+Keys (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{xx,  }\item[{int}]{yy }\end{DoxyParamCaption})}
+
+
+
+Obsługa specjalnych klawiszy. 
+
+Lista zdarzeń\+:
+\begin{DoxyItemize}
+\item Zdarzenia klawiatury\+:
+\begin{DoxyEnumerate}
+\item Strzałka w lewo ~\newline
+ Obrót kamery w lewą stronę.
+\item Strzałka w prawo ~\newline
+ Obrót kamery w prawą stronę.
+\item Strzałka w dół ~\newline
+ Przesunięcie kamery do tyłu.
+\item Strzałka w górę ~\newline
+ Przesunięcie kamery w przód.
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parametry}
+{\em key} & -\/ kod wciśniętego klawisza specjalnego. \\
+\hline
+{\em xx} & -\/ pozycja kursora myszy w osi X. \\
+\hline
+{\em yy} & -\/ pozycja kursora myszy w osi Y. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{labirynth_8cpp_acdfe1a696b350494a8500d2dde392242}\label{labirynth_8cpp_acdfe1a696b350494a8500d2dde392242} 
+\index{labirynth.cpp@{labirynth.cpp}!Reload\_TableView@{Reload\_TableView}}
+\index{Reload\_TableView@{Reload\_TableView}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{Reload\_TableView()}{Reload\_TableView()}}
+{\footnotesize\ttfamily void Reload\+\_\+\+Table\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktualizowanie widoku kamery i projekcji na scenie. 
+
+\Hypertarget{labirynth_8cpp_ae4c1a4540b4314a7ae53471b0936978b}\label{labirynth_8cpp_ae4c1a4540b4314a7ae53471b0936978b} 
+\index{labirynth.cpp@{labirynth.cpp}!Reload\_TextView@{Reload\_TextView}}
+\index{Reload\_TextView@{Reload\_TextView}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{Reload\_TextView()}{Reload\_TextView()}}
+{\footnotesize\ttfamily void Reload\+\_\+\+Text\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resetowanie widoku kamery i projekcji na scenie. 
+
+\Hypertarget{labirynth_8cpp_a24bfbdc56b5ad131c24501a347941915}\label{labirynth_8cpp_a24bfbdc56b5ad131c24501a347941915} 
+\index{labirynth.cpp@{labirynth.cpp}!showNotification@{showNotification}}
+\index{showNotification@{showNotification}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{showNotification()}{showNotification()}}
+{\footnotesize\ttfamily void show\+Notification (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{string}]{text,  }\item[{void \texorpdfstring{$\ast$}{*}}]{font }\end{DoxyParamCaption})}
+
+
+
+Pokaż informacje. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ Współrzędna x. \\
+\hline
+{\em y} & -\/ Współrzędna y. \\
+\hline
+{\em text} & -\/ Tekst. \\
+\hline
+{\em font} & -\/ Nazwa czcionki. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{labirynth_8cpp_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}\label{labirynth_8cpp_ab1f321a2f17fa8ba0f5ab4e2621fd6d6} 
+\index{labirynth.cpp@{labirynth.cpp}!startGame@{startGame}}
+\index{startGame@{startGame}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Uruchomienie gry. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em level} & -\/ Poziom w grze. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{labirynth_8cpp_a5a2513e1f41919b94fbb1cf15b615527}\label{labirynth_8cpp_a5a2513e1f41919b94fbb1cf15b615527} 
+\index{labirynth.cpp@{labirynth.cpp}!timer@{timer}}
+\index{timer@{timer}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{timer()}{timer()}}
+{\footnotesize\ttfamily void timer (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Odliczanie czasu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em value} & -\/ Informacja o stanie timera. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja zmiennych}
+\Hypertarget{labirynth_8cpp_acf4d33ee4cff36f69b924471174dcb11}\label{labirynth_8cpp_acf4d33ee4cff36f69b924471174dcb11} 
+\index{labirynth.cpp@{labirynth.cpp}!level@{level}}
+\index{level@{level}!labirynth.cpp@{labirynth.cpp}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int level = 1}
+
+
+
+Numer mapy. 
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjectGrafika3D: Plik źródłowy labirynth.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjectGrafika3D
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">labirynth.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="labirynth_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef LABIRYNTH_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define LABIRYNTH_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;GL/glut.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="labirynth_8h.html#a241aeeb764887ae5e3de58b98f04b16d">   24</a></span><span class="preprocessor">#define  WIDTH 960</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define  HEIGHT 540</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a5d3fb9b91b5c167b70a1a0557e67f271">Display</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#ae4c1a4540b4314a7ae53471b0936978b">Reload_TextView</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a8ef65ec9dceefbeb9b9816decd0b13f0">Keyboard</a>(GLubyte , <span class="keywordtype">int</span> , <span class="keywordtype">int</span> );</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#ac9d58dd19146891f3c43ea79a031d2af">processSpecialKeys</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#aa6b444b00ce1997b232d92175077b7ac">drawCube</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a4fd79e5436e9cf83558c6f197ce15146">drawGround</a>(GLuint&amp;);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#aeebf45ae6fbb81b868d43ecf16043461">drawCircle</a>(<span class="keywordtype">float</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a53d946e3d432513136be5af02d191a9d">loadTexture</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, GLuint&amp;);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a60ebef228b6633754a3122edd12a5473">timer</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a13ee04dc98901b8c4db242c1beb7d840">showNotification</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">string</span>, <span class="keywordtype">void</span>*);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">void</span> <a class="code hl_function" href="labirynth_8h.html#a46bc46ea2d88723304d2468639ee60f4">information</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif </span><span class="comment">// !LABIRYNTH_H</span></div>
+<div class="ttc" id="alabirynth_8h_html_a13ee04dc98901b8c4db242c1beb7d840"><div class="ttname"><a href="labirynth_8h.html#a13ee04dc98901b8c4db242c1beb7d840">showNotification</a></div><div class="ttdeci">void showNotification(float, float, string, void *)</div><div class="ttdoc">Pokaż informacje.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:809</div></div>
+<div class="ttc" id="alabirynth_8h_html_a1e3b6d38df0786ccf7f938d60e386aae"><div class="ttname"><a href="labirynth_8h.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">Inicjalizacja parametrów.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:240</div></div>
+<div class="ttc" id="alabirynth_8h_html_a46bc46ea2d88723304d2468639ee60f4"><div class="ttname"><a href="labirynth_8h.html#a46bc46ea2d88723304d2468639ee60f4">information</a></div><div class="ttdeci">void information()</div><div class="ttdoc">Informacje do wyświetlenia.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:760</div></div>
+<div class="ttc" id="alabirynth_8h_html_a4fd79e5436e9cf83558c6f197ce15146"><div class="ttname"><a href="labirynth_8h.html#a4fd79e5436e9cf83558c6f197ce15146">drawGround</a></div><div class="ttdeci">void drawGround(GLuint &amp;)</div><div class="ttdoc">Rysowanie podłoża.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:679</div></div>
+<div class="ttc" id="alabirynth_8h_html_a53d946e3d432513136be5af02d191a9d"><div class="ttname"><a href="labirynth_8h.html#a53d946e3d432513136be5af02d191a9d">loadTexture</a></div><div class="ttdeci">void loadTexture(const string &amp;, GLuint &amp;)</div><div class="ttdoc">Wczytywanie tekstur.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:729</div></div>
+<div class="ttc" id="alabirynth_8h_html_a5d3fb9b91b5c167b70a1a0557e67f271"><div class="ttname"><a href="labirynth_8h.html#a5d3fb9b91b5c167b70a1a0557e67f271">Display</a></div><div class="ttdeci">void Display()</div><div class="ttdoc">Wyświetlanie grafiki.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:336</div></div>
+<div class="ttc" id="alabirynth_8h_html_a60ebef228b6633754a3122edd12a5473"><div class="ttname"><a href="labirynth_8h.html#a60ebef228b6633754a3122edd12a5473">timer</a></div><div class="ttdeci">void timer(int)</div><div class="ttdoc">Odliczanie czasu.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:369</div></div>
+<div class="ttc" id="alabirynth_8h_html_a8ef65ec9dceefbeb9b9816decd0b13f0"><div class="ttname"><a href="labirynth_8h.html#a8ef65ec9dceefbeb9b9816decd0b13f0">Keyboard</a></div><div class="ttdeci">void Keyboard(GLubyte, int, int)</div><div class="ttdoc">Obsługa wciśniętych klawiszy.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:503</div></div>
+<div class="ttc" id="alabirynth_8h_html_aa6b444b00ce1997b232d92175077b7ac"><div class="ttname"><a href="labirynth_8h.html#aa6b444b00ce1997b232d92175077b7ac">drawCube</a></div><div class="ttdeci">void drawCube()</div><div class="ttdoc">Rysowanie sześcianu.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:595</div></div>
+<div class="ttc" id="alabirynth_8h_html_ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><div class="ttname"><a href="labirynth_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a></div><div class="ttdeci">void startGame()</div><div class="ttdoc">Uruchomienie gry.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:103</div></div>
+<div class="ttc" id="alabirynth_8h_html_ac9d58dd19146891f3c43ea79a031d2af"><div class="ttname"><a href="labirynth_8h.html#ac9d58dd19146891f3c43ea79a031d2af">processSpecialKeys</a></div><div class="ttdeci">void processSpecialKeys(int, int, int)</div><div class="ttdoc">Obsługa specjalnych klawiszy.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:442</div></div>
+<div class="ttc" id="alabirynth_8h_html_ae4c1a4540b4314a7ae53471b0936978b"><div class="ttname"><a href="labirynth_8h.html#ae4c1a4540b4314a7ae53471b0936978b">Reload_TextView</a></div><div class="ttdeci">void Reload_TextView()</div><div class="ttdoc">Resetowanie widoku kamery i projekcji na scenie.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:299</div></div>
+<div class="ttc" id="alabirynth_8h_html_aeebf45ae6fbb81b868d43ecf16043461"><div class="ttname"><a href="labirynth_8h.html#aeebf45ae6fbb81b868d43ecf16043461">drawCircle</a></div><div class="ttdeci">void drawCircle(float, int)</div><div class="ttdoc">Rysowanie okręgu.</div><div class="ttdef"><b>Definition</b> labirynth.cpp:708</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
