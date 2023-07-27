@@ -2,7 +2,7 @@
  * \file   labirynth.h
  * \brief  Przechowuje deklaracjê plików nag³ówkowych, funkcji i sta³ych u¿ywanych do obs³ugi labiryntu.
  * 
- * \author Micha³ Polak
+ * \author Micha³ Polak, Rados³aw Barwacz
  * \date   May 2023
  *********************************************************************/
 

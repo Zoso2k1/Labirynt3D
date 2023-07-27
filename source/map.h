@@ -2,7 +2,7 @@
  * \file   map.h
  * \brief  Przechowuje deklaracjê plików nag³ówkowych i funkcji s³u¿¹cej do odczytywanie tablicy dwuwymiarowej z pliku txt.
  * 
- * \author Micha³ Polak
+ * \author Micha³ Polak, Rados³aw Barwacz
  * \date   May 2023
  *********************************************************************/
 

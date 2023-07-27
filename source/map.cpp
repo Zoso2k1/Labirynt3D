@@ -2,7 +2,7 @@
  * \file   map.cpp
  * \brief  Przechowuje funkcje pobieraj¹ca tablicê dwuwymiarow¹ z pliku txt.
  * 
- * \author Micha³ Polak
+ * \author Micha³ Polak, Rados³aw Barwacz
  * \date   May 2023
  *********************************************************************/
 

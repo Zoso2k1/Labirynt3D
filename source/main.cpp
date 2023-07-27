@@ -2,7 +2,7 @@
  * \file   main.cpp
  * \brief  Przechowuje funkcje tworz¹c¹ okno oraz uruchamia rysowanie labiryntu.
  * 
- * \author Micha³ Polak
+ * \author Micha³ Polak, Rados³aw Barwacz
  * \date   April 2023
  *********************************************************************/
 

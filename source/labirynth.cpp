@@ -2,7 +2,7 @@
  * \file   labirynth.cpp
  * \brief  Przechowuje funkcje oraz zmienne u¿ywane do rysowania labiryntu.
  * 
- * \author Micha³ Polak
+ * \author Micha³ Polak, Rados³aw Barwacz
  * \date   April 2023
  *********************************************************************/
 
